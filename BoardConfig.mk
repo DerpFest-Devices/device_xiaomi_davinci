@@ -35,5 +35,9 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
 BOARD_DTBOIMG_PARTITION_SIZE := 33554432
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := libinit_davinci
+TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/davinci/BoardConfigVendor.mk
