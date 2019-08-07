@@ -130,12 +130,6 @@ service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
     onrestart stop vendor.motor
     disabled
 
-service nv_mac /vendor/bin/nv_mac
-    class main
-    user system
-    group system inet net_admin wifi net_raw
-    oneshot
-
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system

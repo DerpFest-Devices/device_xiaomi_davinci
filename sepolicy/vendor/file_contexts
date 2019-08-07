@@ -17,3 +17,4 @@
 
 # WiFi
 /vendor/bin/nv_mac                            u:object_r:wcnss_service_exec:s0
+/vendor/bin/wifi-mac-generator                u:object_r:wifi-mac-generator_exec:s0
