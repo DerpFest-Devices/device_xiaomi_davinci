@@ -11,3 +11,5 @@ sys.displayfeature.hbm.enable            u:object_r:vendor_displayfeature_prop:s
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 sys.panel.display          u:object_r:vendor_fp_prop:s0
+
+sys.thermal.                             u:object_r:thermal_normal_prop:s0

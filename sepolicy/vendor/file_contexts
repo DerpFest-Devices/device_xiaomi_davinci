@@ -14,5 +14,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service                                u:object_r:hal_displayfeature_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service                                  u:object_r:hal_touchfeature_default_exec:s0
 
+# Thermal
+/(vendor|system/vendor)/bin/mi_thermald            u:object_r:mi_thermald_exec:s0
+
 # WiFi
 /vendor/bin/nv_mac                            u:object_r:wcnss_service_exec:s0
