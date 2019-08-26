@@ -1,0 +1,5 @@
+type fingerprint_device, dev_type;
+
+type camera_motor_device, dev_type;
+
+type touchfeature_device, dev_type;

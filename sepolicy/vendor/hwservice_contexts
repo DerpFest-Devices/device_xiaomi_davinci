@@ -1,0 +1,18 @@
+vendor.qti.hardware.fingerprint::IQtiExtendedFingerprint     			     u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.cap.biometrics.fingerprint::IGoodixFingerprintDaemon          u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.cap.biometrics.fingerprint::IGoodixFingerprintDaemonExt       u:object_r:hal_fingerprint_hwservice:s0
+vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint                      u:object_r:hal_fingerprint_hwservice:s0
+vendor.goodix.hardware.fingerprintextension::IGoodixBiometricsFingerprint            u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintEngineering          u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest           u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintNavigation           u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintCalibration          u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintEngineering 	     u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintAuthenticator 	     u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintNavigation 	     u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintSensorTest 	     u:object_r:hal_fingerprint_hwservice:s0
+com.fingerprints.extension::IFingerprintCalibration 	     u:object_r:hal_fingerprint_hwservice:s0
+
+vendor.xiaomi.hardware.displayfeature::IDisplayFeature         u:object_r:hal_displayfeature_hwservice:s0
+
+vendor.xiaomi.hardware.touchfeature::ITouchFeature              u:object_r:hal_touchfeature_hwservice:s0

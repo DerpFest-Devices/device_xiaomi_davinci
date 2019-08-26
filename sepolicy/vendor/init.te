@@ -1,0 +1,6 @@
+allow init {
+    hal_display_color_hwservice
+    hal_display_postproc_hwservice
+}:hwservice_manager find;
+allow init hwservicemanager:binder call;
+allow init self:qipcrtr_socket read;

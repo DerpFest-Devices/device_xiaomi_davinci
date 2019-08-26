@@ -1,0 +1,6 @@
+allow hal_camera_default remosaic_daemon_service:service_manager find;
+
+allow hal_camera_default sysfs_kgsl:dir search;
+allow hal_camera_default sysfs_kgsl:file r_file_perms;
+
+r_dir_file(hal_camera_default, persist_camera_file)

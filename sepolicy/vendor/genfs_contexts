@@ -1,0 +1,3 @@
+# FOD
+genfscon sysfs /devices/virtual/touch/tp_dev/fod_status                    u:object_r:sysfs_fod:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display/fod_hbm          u:object_r:sysfs_fod:s0
