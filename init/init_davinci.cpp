@@ -70,7 +70,7 @@ static void init_setup_model_properties()
     if (buf.find("CN") != std::string::npos) {
         property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi K20");
     } else {
-        property_override_dual("ro.product.model", "ro.vendor.product.model",  "Xiaomi Mi 9T");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "Mi 9T");
     }
 }
 
