@@ -14,3 +14,5 @@ allow hal_fingerprint_default sysfs_fod:file rw_file_perms;
 
 # Ignore all logging requests
 dontaudit hal_fingerprint storage_file:dir search;
+
+binder_call(hal_fingerprint_default, hal_perf_default)
