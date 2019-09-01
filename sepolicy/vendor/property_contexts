@@ -13,3 +13,13 @@ vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 sys.panel.display          u:object_r:vendor_fp_prop:s0
 
 vendor.media.sdmmagpie.version      u:object_r:vendor_media_sdmmagpie_version_prop:s0
+
+vendor.min_freq_0                 u:object_r:vendor_mpctl_prop:s0
+vendor.min_freq_4                 u:object_r:vendor_mpctl_prop:s0
+ro.vendor.qti.core_ctl_min_cpu    u:object_r:vendor_mpctl_prop:s0
+ro.vendor.qti.core_ctl_max_cpu    u:object_r:vendor_mpctl_prop:s0
+vendor.post_boot.parsed    u:object_r:vendor_mpctl_prop:s0
+vendor.perf.cores_online   u:object_r:vendor_mpctl_prop:s0
+persist.vendor.qti.        u:object_r:vendor_mpctl_prop:s0
+ro.vendor.at_library       u:object_r:vendor_mpctl_prop:s0
+vendor.debug.trace.perf    u:object_r:vendor_mpctl_prop:s0

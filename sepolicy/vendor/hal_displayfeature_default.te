@@ -21,6 +21,7 @@ hal_client_domain(hal_displayfeature_default, hal_display_color)
 hal_client_domain(hal_displayfeature_default, hal_display_postproc)
 
 get_prop(hal_displayfeature_default, vendor_dpps_prop)
+get_prop(hal_displayfeature_default, vendor_mpctl_prop)
 
 allow hal_displayfeature_default qdisplay_service:service_manager find;
 
