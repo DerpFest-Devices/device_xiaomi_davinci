@@ -1,0 +1,2 @@
+allow adsprpcd sysfs_graphics:dir r_dir_perms;
+allow adsprpcd sysfs_graphics:file r_file_perms;
