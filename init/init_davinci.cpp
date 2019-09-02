@@ -43,20 +43,46 @@ using android::init::property_set;
 void property_override(char const prop[], char const value[])
 {
     prop_info *pi;
-     pi = (prop_info*) __system_property_find(prop);
+    pi = (prop_info*) __system_property_find(prop);
     if (pi)
         __system_property_update(pi, value, strlen(value));
     else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
- void property_override_dual(char const system_prop[],
-        char const vendor_prop[], char const value[])
+void property_override_dual(char const system_prop[],
+    char const vendor_prop[], char const value[])
 {
     property_override(system_prop, value);
     property_override(vendor_prop, value);
 }
 
-static void init_setup_model_properties()
+void load_davinciglobal() {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Mi 9T");
+    property_override("ro.build.product", "davinci");
+    property_override_dual("ro.product.device", "ro.product.vendor.device", "davinci");
+    property_override("ro.build.description", "davinci-user 9 PKQ1.190302.001 V10.3.9.0.PFJMIXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinci/davinci:9/PKQ1.190302.001/V10.3.9.0.PFJMIXM:user/release-keys");
+    property_override("ro.product.mod_device", "davinci_global");
+}
+
+void load_davinciin() {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi K20");
+    property_override("ro.build.product", "davinciin");
+    property_override_dual("ro.product.device", "ro.product.vendor.device",  "davinciin");
+    property_override("ro.build.description", "davinciin-user 9 PKQ1.190302.001 V10.3.8.0.PFJINXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinciin/davinciin:9/PKQ1.190302.001/V10.3.8.0.PFJINXM:user/release-keys");
+    property_override("ro.product.mod_device", "davinciin_in_global");
+}
+
+void load_davinci() {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi K20");
+    property_override("ro.build.product", "davinci");
+    property_override_dual("ro.product.device", "ro.product.vendor.device",  "davinci");
+    property_override("ro.build.description", "davinci-user 9 PKQ1.190302.001 V10.3.15.0.PFJCNXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinci/davinci:9/PKQ1.190302.001/V10.3.15.0.PFJCNXM:user/release-keys");
+}
+
+void vendor_load_properties()
 {
     std::ifstream fin;
     std::string buf;
@@ -67,14 +93,11 @@ static void init_setup_model_properties()
             break;
     fin.close();
 
-    if (buf.find("GLOBAL") != std::string::npos) {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Mi 9T");
-    } else {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi K20");
+    if (buf.find("CN") != std::string::npos) {
+        load_davinci();
+    } else if (buf.find("INDIA") != std::string::npos) {
+        load_davinciin();
+    } else if (buf.find("GLOBAL") != std::string::npos) {
+        load_davinciglobal();
     }
-}
-
-void vendor_load_properties()
-{
-    init_setup_model_properties();
 }
