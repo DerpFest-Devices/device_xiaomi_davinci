@@ -11,5 +11,3 @@ sys.displayfeature.hbm.enable            u:object_r:vendor_displayfeature_prop:s
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 sys.panel.display          u:object_r:vendor_fp_prop:s0
-
-vendor.media.sdmmagpie.version      u:object_r:vendor_media_sdmmagpie_version_prop:s0
