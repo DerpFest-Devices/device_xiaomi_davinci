@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from sm6150-common
+$(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/davinci/davinci-vendor.mk)
 
@@ -25,9 +28,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
-
-# Inherit from sm6150-common
-$(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
