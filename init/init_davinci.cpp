@@ -61,7 +61,7 @@ void load_davinciglobal() {
     property_override("ro.build.product", "davinci");
     property_override_dual("ro.product.device", "ro.product.vendor.device", "davinci");
     property_override("ro.build.description", "davinci-user 9 PKQ1.190302.001 V10.3.9.0.PFJMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinci/davinci:9/PKQ1.190302.001/V10.3.9.0.PFJMIXM:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/cepheus_eea/cepheus:9/PKQ1.181121.001/V10.2.27.0.PFAEUXM:user/release-keys");
     property_override("ro.product.mod_device", "davinci_global");
 }
 
@@ -70,7 +70,7 @@ void load_davinciin() {
     property_override("ro.build.product", "davinciin");
     property_override_dual("ro.product.device", "ro.product.vendor.device",  "davinciin");
     property_override("ro.build.description", "davinciin-user 9 PKQ1.190302.001 V10.3.8.0.PFJINXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinciin/davinciin:9/PKQ1.190302.001/V10.3.8.0.PFJINXM:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/cepheus_eea/cepheus:9/PKQ1.181121.001/V10.2.27.0.PFAEUXM:user/release-keys");
     property_override("ro.product.mod_device", "davinciin_in_global");
 }
 
@@ -79,7 +79,7 @@ void load_davinci() {
     property_override("ro.build.product", "davinci");
     property_override_dual("ro.product.device", "ro.product.vendor.device",  "davinci");
     property_override("ro.build.description", "davinci-user 9 PKQ1.190302.001 V10.3.15.0.PFJCNXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/davinci/davinci:9/PKQ1.190302.001/V10.3.15.0.PFJCNXM:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/cepheus_eea/cepheus:9/PKQ1.181121.001/V10.2.27.0.PFAEUXM:user/release-keys");
 }
 
 void vendor_load_properties()
