@@ -33,7 +33,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 TARGET_TAP_TO_WAKE_EVENT_NODE := "/dev/input/event2"
 
 # Sepolicy
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Vendor init

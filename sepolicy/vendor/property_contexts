@@ -1,13 +1,3 @@
-persist.vendor.df.extcolor.proc          u:object_r:vendor_displayfeature_prop:s0
-persist.vendor.df.color.temp             u:object_r:vendor_displayfeature_prop:s0
-persist.vendor.max.brightness            u:object_r:vendor_displayfeature_prop:s0
-ro.displayfeature.histogram.enable       u:object_r:vendor_displayfeature_prop:s0
-ro.hist.brightness.threshold             u:object_r:vendor_displayfeature_prop:s0
-ro.vendor.df.effect.conflict             u:object_r:vendor_displayfeature_prop:s0
-ro.whitepoint_calibration_enable         u:object_r:vendor_displayfeature_prop:s0
-sys.displayfeature.entry.enable          u:object_r:vendor_displayfeature_prop:s0
-sys.displayfeature.hbm.enable            u:object_r:vendor_displayfeature_prop:s0
-
 ro.hardware.fp             u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.            u:object_r:vendor_fp_prop:s0
 sys.panel.display          u:object_r:vendor_fp_prop:s0
