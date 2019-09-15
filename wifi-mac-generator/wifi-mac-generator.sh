@@ -59,6 +59,4 @@ if [ ! -f "${WLAN_MAC_PERSIST_PATH}" ]; then
 
     # Write the MACs
     echo "Intf0MacAddress=${first_mac}" > "${WLAN_MAC_PERSIST_PATH}"
-    echo "Intf1MacAddress=${second_mac}" >> "${WLAN_MAC_PERSIST_PATH}"
-    echo "END" >> "${WLAN_MAC_PERSIST_PATH}"
 fi
