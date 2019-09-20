@@ -1,3 +1,7 @@
 # Allow hal_lineage_camera_motor_default to read and write to camera_motor_device
 allow hal_lineage_camera_motor_default camera_motor_device:dir search;
 allow hal_lineage_camera_motor_default camera_motor_device:chr_file rw_file_perms;
+
+# Allow hal_lineage_camera_motor_default to read and write to sysfs_leds
+allow hal_lineage_camera_motor_default { sysfs_graphics sysfs_leds }:dir search;
+allow hal_lineage_camera_motor_default sysfs_graphics:file rw_file_perms;
