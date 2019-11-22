@@ -45,6 +45,11 @@
                  android:permission="XiaomiDozeService">
         </service>
 
+        <service
+            android:name=".fpsinfo.FPSInfoService"
+            android:exported="false">
+        </service>
+
         <service android:name=".popupcamera.PopupCameraService"
                  android:permission="PopupCameraService">
         </service>
