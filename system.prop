@@ -11,6 +11,7 @@ persist.vendor.dpm.loglevel=0
 persist.vendor.dpm.nsrm.bkg.evt=3955
 
 #lmkd
+ro.lmk.use_psi=true
 ro.lmk.low_ram=false
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
