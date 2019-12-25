@@ -27,6 +27,7 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 #GApps
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 
 PRODUCT_NAME := derp_davinci
