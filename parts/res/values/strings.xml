@@ -38,4 +38,8 @@
     <!-- Pick-up to wake gesture-->
     <string name="wake_gesture_title">Wake up</string>
     <string name="wake_gesture_summary">Wake up the device instead of pulsing notifications</string>
+
+     <!-- FPS Counter -->
+    <string name="fps_info_title">FPS Counter</string>
+
 </resources>
