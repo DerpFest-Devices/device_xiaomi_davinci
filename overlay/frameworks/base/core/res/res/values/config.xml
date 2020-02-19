@@ -612,4 +612,8 @@
     <integer-array name="config_keyboardTapVibePattern">
         <item>20</item>
     </integer-array>
+
+    <!-- Enable pocket mode -->
+    <bool name="config_proxiSensorWakupCheck">true</bool> 
+
 </resources>
