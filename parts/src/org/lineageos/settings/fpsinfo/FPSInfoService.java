@@ -25,7 +25,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
-import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.IBinder;
@@ -34,22 +33,15 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.service.dreams.DreamService;
 import android.service.dreams.IDreamManager;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
-import android.util.Log;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.lang.StringBuffer;
 import java.lang.Math;
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.lang.StringBuffer;
+
+import org.lineageos.settings.utils.FileUtils;
 
 public class FPSInfoService extends Service {
     private View mView;
@@ -57,7 +49,7 @@ public class FPSInfoService extends Service {
     private final String TAG = "FPSInfoService";
     private String mFps = null;
 
-    private static final String MEASURED_FPS = "/sys/devices/virtual/graphics/fb0/measured_fps";
+    private static final String MEASURED_FPS = "/sys/class/drm/card0/sde-crtc-0/measured_fps";
 
     private IDreamManager mDreamManager;
 
@@ -65,7 +57,7 @@ public class FPSInfoService extends Service {
         private Paint mOnlinePaint;
         private float mAscent;
         private int mFH;
-        private int mMaxWidth;
+        private int mMaxWidth = 0;
 
         private int mNeededWidth;
         private int mNeededHeight;
@@ -74,16 +66,15 @@ public class FPSInfoService extends Service {
 
         private Handler mCurFPSHandler = new Handler() {
             public void handleMessage(Message msg) {
-                if(msg.obj==null){
+                if(msg.obj == null || msg.what != 1) {
                     return;
                 }
-                if(msg.what==1){
-                    String msgData = (String) msg.obj;
-                    msgData = msgData.substring(0, Math.min(msgData.length(), 9));
-                    mFps = msgData;
-                    mDataAvail = true;
-                    updateDisplay();
-                }
+
+                String msgData = (String) msg.obj;
+                msgData = msgData.trim().split("\\s+")[1];
+                mFps = msgData + " FPS";
+                mDataAvail = true;
+                updateDisplay();
             }
         };
 
@@ -108,9 +99,6 @@ public class FPSInfoService extends Service {
             mAscent = mOnlinePaint.ascent();
             float descent = mOnlinePaint.descent();
             mFH = (int)(descent - mAscent + .5f);
-
-            final String maxWidthStr="60.1";
-            mMaxWidth = (int)mOnlinePaint.measureText(maxWidthStr);
 
             updateDisplay();
         }
@@ -163,6 +151,10 @@ public class FPSInfoService extends Service {
                 return;
             }
 
+            if (mOnlinePaint != null) {
+                mMaxWidth = (int) mOnlinePaint.measureText(mFps);
+            }
+
             int neededWidth = mPaddingLeft + mPaddingRight + mMaxWidth;
             int neededHeight = mPaddingTop + mPaddingBottom + 40;
             if (neededWidth != mNeededWidth || neededHeight != mNeededHeight) {
@@ -197,7 +189,7 @@ public class FPSInfoService extends Service {
                 while (!mInterrupt) {
                     sleep(1000);
                     StringBuffer sb=new StringBuffer();
-                    String fpsVal = FPSInfoService.readOneLine(MEASURED_FPS);
+                    String fpsVal = FileUtils.readOneLine(MEASURED_FPS);
                     mHandler.sendMessage(mHandler.obtainMessage(1, fpsVal));
                 }
             } catch (InterruptedException e) {
@@ -218,6 +210,7 @@ public class FPSInfoService extends Service {
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|
             WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
             PixelFormat.TRANSLUCENT);
+        params.y = 50;
         params.gravity = Gravity.LEFT | Gravity.TOP;
         params.setTitle("FPS Info");
 
@@ -245,22 +238,6 @@ public class FPSInfoService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return null;
-    }
-
-    private static String readOneLine(String fname) {
-        BufferedReader br;
-        String line = null;
-        try {
-            br = new BufferedReader(new FileReader(fname), 512);
-            try {
-                line = br.readLine();
-            } finally {
-                br.close();
-            }
-        } catch (Exception e) {
-            return null;
-        }
-        return line;
     }
 
     private BroadcastReceiver mScreenStateReceiver = new BroadcastReceiver() {
