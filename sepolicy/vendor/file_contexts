@@ -27,6 +27,9 @@
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.xiaomi-libperfmgr u:object_r:hal_power_default_exec:s0
+
 # WiFi
 /vendor/bin/nv_mac                                                   u:object_r:wcnss_service_exec:s0
 

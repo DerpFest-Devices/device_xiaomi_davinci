@@ -18,6 +18,13 @@ ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 sys.panel.display                  u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 
+# Power
+vendor.powerhal.state      u:object_r:power_prop:s0
+vendor.powerhal.audio      u:object_r:power_prop:s0
+vendor.powerhal.lpm        u:object_r:power_prop:s0
+vendor.powerhal.init       u:object_r:power_prop:s0
+vendor.powerhal.rendering  u:object_r:power_prop:s0
+
 # Sensors
 persist.sensor.                    u:object_r:persist_sensors_prop:s0
 
