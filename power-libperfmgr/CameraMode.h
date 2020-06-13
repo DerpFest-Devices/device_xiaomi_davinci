@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2018 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,17 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "libpower_feature.davinci"
+#ifndef POWER_LIBPERFMGR_CAMERAMODE_H_
+#define POWER_LIBPERFMGR_CAMERAMODE_H_
 
-#define INPUT_EVENT_WAKUP_MODE_OFF 4
-#define INPUT_EVENT_WAKUP_MODE_ON 5
+enum CameraStreamingMode {
+    CAMERA_STREAMING_OFF = 0,
+    CAMERA_STREAMING,
+    CAMERA_STREAMING_1080P,
+    CAMERA_STREAMING_60FPS,
+    CAMERA_STREAMING_4K,
+    CAMERA_STREAMING_SECURE,
+    CAMERA_STREAMING_MAX
+};
+
+#endif  // POWER_LIBPERFMGR_CAMERAMODE_H_

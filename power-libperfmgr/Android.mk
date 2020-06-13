@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The LineageOS Project
+# Copyright 2018 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +14,11 @@
 # limitations under the License.
 #
 
-LOCAL_PATH:= $(call my-dir)
-
+LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := power-feature.c
-LOCAL_SHARED_LIBRARIES := liblog libcutils
-LOCAL_HEADER_LIBRARIES := \
-    generated_kernel_headers \
-    libhardware_headers
-
-LOCAL_MODULE := libpower_feature.davinci
+LOCAL_MODULE := powerhint.json
 LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-
-include $(BUILD_STATIC_LIBRARY)
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
