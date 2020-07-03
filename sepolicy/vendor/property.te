@@ -1,2 +1,5 @@
+# Dolby
+type vendor_dolby_loglevel_prop, property_type;
+
 # Power
 type power_prop, property_type;
