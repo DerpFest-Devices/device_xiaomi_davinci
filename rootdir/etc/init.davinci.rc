@@ -34,6 +34,16 @@ on init
     write /sys/class/leds/green/max_brightness 32
     write /sys/class/leds/blue/max_brightness 32
 
+on property:ro.boot.product.hardware.sku=davinci
+    enable vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
     class hal
     user system
