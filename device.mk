@@ -37,6 +37,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    libshim_megvii
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150
