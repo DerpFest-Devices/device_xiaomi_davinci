@@ -18,6 +18,11 @@ ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 sys.panel.display                  u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 
+# Mlipay
+persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
+persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
+ro.hardware.fp.fod                      u:object_r:mlipay_prop:s0
+
 # Power
 vendor.powerhal.state      u:object_r:power_prop:s0
 vendor.powerhal.audio      u:object_r:power_prop:s0

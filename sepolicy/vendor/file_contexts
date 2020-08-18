@@ -20,6 +20,9 @@
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service          u:object_r:hal_motor_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service   u:object_r:hal_touchfeature_default_exec:s0
 
+# Mlipay
+/(vendor|system/vendor)/bin/mlipayd@1.1                              u:object_r:hal_mlipay_default_exec:s0
+
 # Motor
 /dev/akm09970                                                        u:object_r:hall_device:s0
 /dev/drv8846_dev                                                     u:object_r:motor_device:s0
