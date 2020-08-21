@@ -1,0 +1,38 @@
+[
+  {
+    "repository" : "DarkDampSquib/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch"     : "ten",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "DarkDampSquib/vendor_MiuiCamera",
+    "target_path": "vendor/miuicamera",
+    "branch"     : "ten",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "DarkDampSquib/vendor_xiaomi_firmware",
+    "target_path": "vendor/xiaomi/firmware",
+    "branch"     : "master",
+    "remote"     : "gitlab"
+  },
+  {
+    "repository" : "DerpFest-Devices/vendor_xiaomi_davinci",
+    "target_path": "vendor/xiaomi/davinci",
+    "branch"     : "ten",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "kdrag0n/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
+    "branch"     : "master",
+    "remote"     : "github"
+  },
+  {
+    "repository" : "vantoman/kernel_xiaomi_davinci",
+    "target_path": "kernel/xiaomi/davinci",
+    "branch"     : "VantomKernel",
+    "remote"     : "github"
+  }
+]
