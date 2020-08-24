@@ -5,7 +5,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1017600",
+        "1248000",
         "576000"
       ],
       "DefaultIndex": 0,
@@ -16,7 +16,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1017600",
+        "1248000",
         "576000"
       ],
       "ResetOnInit": true
@@ -26,7 +26,7 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_max_freq",
       "Values": [
         "9999999",
-        "1324800",
+        "1555200",
         "652800"
       ],
       "DefaultIndex": 0,
@@ -37,29 +37,29 @@
       "Path": "/sys/devices/system/cpu/cpu6/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1324800",
+        "1555200",
         "652800"
       ],
       "ResetOnInit": true
     },
     {
       "Name": "GPUMaxFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/max_pwrlevel",
       "Values": [
-        "650000000",
-        "430000000",
-        "180000000"
+        "0",
+        "3",
+        "7"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
-      "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
+      "Path": "/sys/class/kgsl/kgsl-3d0/min_pwrlevel",
       "Values": [
-        "650000000",
-        "430000000",
-        "180000000"
+        "0",
+        "3",
+        "7"
       ],
       "ResetOnInit": true
     },
@@ -123,7 +123,8 @@
       "Values": [
         "14236",
         "9155",
-        "2288"
+        "7110",
+        "4577"
       ],
       "ResetOnInit": true
     },
@@ -134,6 +135,15 @@
         "6881",
         "2597",
         "762"
+      ],
+      "ResetOnInit": true
+    },
+    {
+      "Name": "L3LittleClusterMinFreq",
+      "Path": "/sys/class/devfreq/soc:qcom,cpu0-cpu-l3-lat/min_freq",
+      "Values": [
+        "1459200000",
+        "300000000"
       ],
       "ResetOnInit": true
     },
@@ -183,11 +193,11 @@
       "ResetOnInit": true
     },
     {
-      "Name": "SchedFeatures",
-      "Path": "/sys/kernel/debug/sched_features",
+      "Name": "EnergyAware",
+      "Path": "/proc/sys/kernel/sched_energy_aware",
       "Values": [
-        "NO_ENERGY_AWARE",
-        "ENERGY_AWARE"
+        "0",
+        "1"
       ],
       "ResetOnInit": true
     },
@@ -313,25 +323,25 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "1324800"
+      "Value": "1555200"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1017600"
+      "Value": "1248000"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "3"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1017600"
+      "Value": "1248000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -341,9 +351,9 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "SchedFeatures",
+      "Node": "EnergyAware",
       "Duration": 2000,
-      "Value": "NO_ENERGY_AWARE"
+      "Value": "0"
     },
     {
       "PowerHint": "LAUNCH",
@@ -419,6 +429,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "L3LittleClusterMinFreq",
+      "Duration": 2000,
+      "Value": "1459200000"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 2000,
       "Value": "1459200000"
@@ -463,13 +479,13 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "430000000"
+      "Value": "0"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "650000000"
+      "Value": "0"
     },
     {
       "PowerHint": "NOT_INTERACTIVE",
@@ -499,13 +515,13 @@
       "PowerHint": "NOT_INTERACTIVE",
       "Node": "GPUMinFreq",
       "Duration": 0,
-      "Value": "180000000"
+      "Value": "7"
     },
     {
       "PowerHint": "NOT_INTERACTIVE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "180000000"
+      "Value": "7"
     }
   ]
 }
