@@ -100,7 +100,7 @@ case "$target" in
     echo 3f > /proc/irq/default_smp_affinity
 
     # Enable EAS
-    echo ENERGY_AWARE > /sys/kernel/debug/sched_features
+    echo 1 > /proc/sys/kernel/sched_energy_aware
 
     # Setting b.L scheduler parameters
     # default sched up and down migrate values are 71 and 65
