@@ -82,7 +82,7 @@ void vendor_load_properties() {
     std::string region;
     std::string hardware_revision;
     region = GetProperty("ro.boot.hwc", "GLOBAL");
-    hardware_revision = GetProperty("ro.boot.hwversion", "5.19.0");
+    hardware_revision = GetProperty("ro.boot.hwversion", "UNKNOWN");
 
     std::string model;
     std::string device;
