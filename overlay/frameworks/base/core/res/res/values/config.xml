@@ -42,4 +42,7 @@
   
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">35.0dip</dimen>
+
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
 </resources>
