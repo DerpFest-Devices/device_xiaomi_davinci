@@ -54,7 +54,8 @@
         android:layout_height="@dimen/biometric_dialog_biometric_icon_size"
         android:paddingTop="48dp"
         android:layout_gravity="center_horizontal"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:id="@+id/button_bar"
