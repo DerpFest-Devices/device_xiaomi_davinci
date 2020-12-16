@@ -78,5 +78,11 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    WifiOverlayF10C \
+    WifiOverlayF10G \
+    WifiOverlayF10I
+
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
