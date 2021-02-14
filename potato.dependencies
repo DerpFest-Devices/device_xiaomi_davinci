@@ -1,19 +1,27 @@
 [
   {
-    "repository"  : "kernel_xiaomi_sm6150",
+    "repository"  : "PotatoDevices/kernel_xiaomi_sm6150",
     "target_path" : "kernel/xiaomi/sm6150"
   },
   {
-    "repository"  : "device_xiaomi_davinci",
+    "repository"  : "PotatoDevices/device_xiaomi_davinci",
     "target_path" : "device/xiaomi/davinci"
   },
   {
-    "repository"  : "device_xiaomi_sm6150-common",
+    "repository"  : "PotatoDevices/device_xiaomi_sm6150-common",
     "target_path" : "device/xiaomi/sm6150-common"
   },
+{   
+    "repository"  : "PotatoDevices/vendor_xiaomi_davinci",
+    "target_path" : "vendor/xiaomi/davinci"
+},
+{
+    "repository"  : "PotatoDevices/vendor_xiaomi_sm6150-common",
+    "target_path" : "vendor/xiaomi/sm6150-common"
+},
 {
     "repository": "LineageOS/hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-     branch: "lineage-18.1"
+    "branch: "lineage-18.1"
 } 
 ]
