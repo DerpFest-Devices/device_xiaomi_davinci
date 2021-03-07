@@ -62,11 +62,11 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/"
+    "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/"
     "release-keys",
-    "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/"
+    "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/"
     "release-keys",
-    "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/"
+    "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/"
     "release-keys",
 };
 
