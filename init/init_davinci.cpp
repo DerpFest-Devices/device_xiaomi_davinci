@@ -47,7 +47,7 @@ constexpr const char *RO_PROP_SOURCES[] = {
 
 constexpr const char *PRODUCTS[] = {
     "davinci",
-    "davincin",
+    "davinciin",
 };
 
 constexpr const char *DEVICES[] = {
