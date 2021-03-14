@@ -45,4 +45,7 @@
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">35.0dip</dimen>
+
+    <!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
 </resources>
