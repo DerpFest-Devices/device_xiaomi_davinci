@@ -23,10 +23,5 @@
     "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "lineage-18.1"
-},
-{
-    "repository": "adi8900/vendor_xiaomi_dirac",
-    "target_path": "vendor/xiaomi/dirac",
-    "branch": "dumaloo-release"
 }
 ]
