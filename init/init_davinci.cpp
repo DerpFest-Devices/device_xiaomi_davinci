@@ -58,7 +58,7 @@ constexpr const char *DEVICES[] = {
 constexpr const char *BUILD_DESCRIPTION[] = {
     "davinci-user 11 RKQ1.200826.002 V12.1.2.0.RFJCNXM release-keys",
     "davinci-user 11 RKQ1.200826.002 V12.1.2.0.RFJMIXM release-keys",
-    "davinciin-user 10 QKQ1.190825.002 V12.0.8.0.QFJINXM release-keys",
+    "davinciin-user 11 RKQ1.200826.002 V12.1.2.0.RFJINXM release-keys",
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
