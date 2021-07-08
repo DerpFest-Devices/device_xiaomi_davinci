@@ -62,11 +62,11 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/"
+    "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/"
     "release-keys",
-    "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/"
+    "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/"
     "release-keys",
-    "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/"
+    "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/"
     "release-keys",
 };
 
