@@ -249,15 +249,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "0x00000043",
-        "0x00000064"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "ForegroundCpuset",
       "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
@@ -431,12 +422,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 2000,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "0x00000043"
     },
     {
       "PowerHint": "LAUNCH",
