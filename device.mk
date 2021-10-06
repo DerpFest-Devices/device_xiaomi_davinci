@@ -39,10 +39,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_megvii
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150
-
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.davinci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.davinci.rc
