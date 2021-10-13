@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_sm6150-udfps
 
 # Init scripts
 PRODUCT_COPY_FILES += \
