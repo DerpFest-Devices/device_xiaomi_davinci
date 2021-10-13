@@ -29,7 +29,6 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 TARGET_SURFACEFLINGER_FOD_LIB := //$(COMMON_PATH):libfod_extension
 TARGET_USES_FOD_ZPOS := true
 SOONG_CONFIG_xiaomiVars_uses_fod_extension := $(TARGET_USES_FOD_ZPOS)
-SOONG_CONFIG_xiaomiVars_fod_pos_y := 1931
 
 # FOD key for InputDispatcher to skip
 TARGET_INPUTDISPATCHER_SKIP_EVENT_KEY := 338
