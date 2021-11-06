@@ -62,11 +62,11 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/raven/raven:12/SD1A.210817.015.A4/7697517:user/"
+    "google/raven/raven:12/SD1A.210817.036/7805805:user/"
     "release-keys",
-    "google/raven/raven:12/SD1A.210817.015.A4/7697517:user/"
+    "google/raven/raven:12/SD1A.210817.036/7805805:user/"
     "release-keys",
-    "google/raven/raven:12/SD1A.210817.015.A4/7697517:user/"
+    "google/raven/raven:12/SD1A.210817.036/7805805:user/"
     "release-keys",
 };
 
