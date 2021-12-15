@@ -20,8 +20,7 @@
     "target_path" : "vendor/xiaomi/sm6150-common"
 },
 {
-    "repository": "LineageOS/android_hardware_xiaomi",
-    "target_path": "hardware/xiaomi",
-    "branch": "lineage-18.1"
+    "repository": "PotatoDevices/hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
 }
 ]
