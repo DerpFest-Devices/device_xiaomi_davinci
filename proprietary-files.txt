@@ -21,11 +21,6 @@ vendor/lib/rfsa/adsp/misound_res.bin
 # Audio (speaker amplifier) firmware
 vendor/firmware/tfa98xx.cnt
 
-# Bluetooth - from mojito-user 11 RKQ1.201022.002 V12.5.4.0.RKGMIXM release-keys
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|2401640a10df4de23f704b87c4adab2da9ed111d
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|8c1aa835bf7dc6117e0e7872bf207102fcf568ee
-
 # Camera
 vendor/bin/remosaic_daemon
 vendor/etc/camera/CFR_para_T.bin
