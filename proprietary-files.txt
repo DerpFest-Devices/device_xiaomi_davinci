@@ -8,6 +8,7 @@ vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
@@ -248,10 +249,21 @@ vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod
 vendor/lib64/libgf_hal.so
 
 # GPU (Firmware)
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
 vendor/firmware/a615_zap.mdt
+vendor/firmware/a618_gmu.bin
+vendor/firmware/a630_sqe.fw
 
 # IPA (Firmware)
+vendor/firmware/ipa_fws.b00
+vendor/firmware/ipa_fws.b01
 vendor/firmware/ipa_fws.b02
+vendor/firmware/ipa_fws.b03
+vendor/firmware/ipa_fws.b04
+vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # NFC
@@ -263,8 +275,10 @@ vendor/etc/qdcm_calib_data_ss_ea_fhd_cmd_dsi_panel.xml|4a04fcc172cf45ba847287149
 # QDCM - eb - from latest miui stable Q
 vendor/etc/qdcm_calib_data_ss_eb_fhd_cmd_dsi_panel.xml|9592ec2725e2be9b43a13d7ba87ef2a10ba5e249
 
-# Sensor
+# Sensors
 vendor/bin/sensors.qti
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/sensors/config/adux1050_0.json
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/icm4x6xx_0.json
@@ -302,8 +316,12 @@ vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/tcs3701.json
+vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
+vendor/lib64/libsensorcal.so
+vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so
+vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 
 # Touchfeature
