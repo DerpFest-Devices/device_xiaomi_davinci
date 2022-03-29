@@ -37,7 +37,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE += androidboot.hardware.revision=V1
-TARGET_KERNEL_CONFIG := vendor/davinci_defconfig
+TARGET_KERNEL_CONFIG := vendor/davinci_defconfig vendor/debugfs.config
 
 # Partitions
 BOARD_SUPER_PARTITION_BLOCK_DEVICES := vendor system cust
