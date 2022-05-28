@@ -34,6 +34,12 @@ on init
     write /sys/class/leds/green/max_brightness 32
     write /sys/class/leds/blue/max_brightness 32
 
+on property:init.svc.vendor.charger=running
+   chown system system /sys/class/leds/blue/brightness
+   chown system system /sys/class/leds/green/brightness
+   write /sys/class/leds/blue/brightness 255
+   write /sys/class/leds/green/brightness 255
+
 on init && property:ro.boot.hwc=GLOBAL
     setprop bluetooth.device.default_name "Xiaomi Mi 9T"
 
