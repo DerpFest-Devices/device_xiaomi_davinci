@@ -60,10 +60,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
-# Remove few packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Sensor
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
