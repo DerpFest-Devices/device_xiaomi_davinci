@@ -62,11 +62,11 @@ constexpr const char *BUILD_DESCRIPTION[] = {
 };
 
 constexpr const char *BUILD_FINGERPRINT[] = {
-    "google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/"
+    "google/coral/coral:13/TP1A.220624.014/8819323:user/"
     "release-keys",
-    "google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/"
+    "google/coral/coral:13/TP1A.220624.014/8819323:user/"
     "release-keys",
-    "google/redfin/redfin:12/SQ3A.220705.003.A1/8672226:user/"
+    "google/coral/coral:13/TP1A.220624.014/8819323:user/"
     "release-keys",
 };
 
