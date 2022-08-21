@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_davinci.mk
+    $(LOCAL_DIR)/derp_davinci.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_davinci-userdebug \
-    potato_davinci-eng
+    derp_davinci-userdebug \
+    derp_davinci-eng
