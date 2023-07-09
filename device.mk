@@ -10,6 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from sm6150-common
 $(call inherit-product, device/xiaomi/sm6150-common/sm6150.mk)
 
+# MiuiCamera
+$(call inherit-product, vendor/miuicamera-davinci/device.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.sm6150 \
