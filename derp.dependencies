@@ -1,0 +1,26 @@
+[
+  {
+    "repository"  : "DerpFest-Devices/kernel_xiaomi_sm6150",
+    "target_path" : "kernel/xiaomi/sm6150"
+  },
+  {
+    "repository"  : "DerpFest-Devices/device_xiaomi_davinci",
+    "target_path" : "device/xiaomi/davinci"
+  },
+  {
+    "repository"  : "DerpFest-Devices/device_xiaomi_sm6150-common",
+    "target_path" : "device/xiaomi/sm6150-common"
+  },
+{   
+    "repository"  : "DerpFest-Devices/vendor_xiaomi_davinci",
+    "target_path" : "vendor/xiaomi/davinci"
+},
+{
+    "repository"  : "DerpFest-Devices/vendor_xiaomi_sm6150-common",
+    "target_path" : "vendor/xiaomi/sm6150-common"
+},
+{
+    "repository": "adi8900/hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+}
+]
