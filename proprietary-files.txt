@@ -1,7 +1,3 @@
-# Current blobs with ELF checks disabled:
-# libalAILDC, libalLDC, libalhLDC depend on NDK libnativewindow and build is unable to resolve its symbols
-# libVDSuperPhotoAPI, libarcsoft_dualcam_refocus_front, libarcsoft_dualcam_refocus_rear_t, libarcsoft_dualcam_refocus_rear_w depend on libsdsprpc and build is unable to resolve its symbols
-
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
@@ -160,13 +156,13 @@ vendor/lib64/libHalSuperSensorServer.so
 vendor/lib64/libSuperSensor.so
 vendor/lib64/libSuperSensorCPU.so
 vendor/lib64/libVDClearShot.so
-vendor/lib64/libVDSuperPhotoAPI.so;DISABLE_CHECKELF
+vendor/lib64/libVDSuperPhotoAPI.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/lib_denoiser3.so
-vendor/lib64/libalAILDC.so;DISABLE_CHECKELF
+vendor/lib64/libalAILDC.so
 vendor/lib64/libalCFR.so
-vendor/lib64/libalLDC.so;DISABLE_CHECKELF
-vendor/lib64/libalhLDC.so;DISABLE_CHECKELF
+vendor/lib64/libalLDC.so
+vendor/lib64/libalhLDC.so
 vendor/lib64/libarcsat.so
 vendor/lib64/libarcsoft_beautyshot.so
 vendor/lib64/libarcsoft_bodyslim.so
@@ -174,9 +170,9 @@ vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dualcam_image_optical_zoom.so
 vendor/lib64/libarcsoft_dualcam_optical_zoom_control.so
 vendor/lib64/libarcsoft_dualcam_refocus.so
-vendor/lib64/libarcsoft_dualcam_refocus_front.so;DISABLE_CHECKELF
-vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so;DISABLE_CHECKELF
-vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_dualcam_refocus_front.so
+vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so
+vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_portrait_lighting.so
