@@ -6,6 +6,7 @@
 
 # Inherit from davinci device
 $(call inherit-product, device/xiaomi/davinci/device.mk)
+TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Inherit some common DerpFest stuff.
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
