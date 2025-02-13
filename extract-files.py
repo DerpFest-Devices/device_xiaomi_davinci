@@ -30,6 +30,13 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
+        .regex_replace(r'0x10080', '0')
+        .regex_replace(r'0x1F', '0x0'),
+    'vendor/etc/init/vendor.sensors.qti.rc': blob_fixup()
+        .add_line_if_missing('    disabled'),
+    'vendor/lib64/camera/components/com.qti.node.watermark.so': blob_fixup()
+        .add_needed('libpiex_shim.so'),
     ('vendor/lib64/libalAILDC.so', 'vendor/lib64/libalLDC.so', 'vendor/lib64/libalhLDC.so'): blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_describe')
