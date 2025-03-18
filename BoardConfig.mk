@@ -31,7 +31,6 @@ SOONG_CONFIG_xiaomiVars_uses_fod_extension := $(TARGET_USES_FOD_ZPOS)
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_davinci
-TARGET_RECOVERY_DEVICE_MODULES := libinit_davinci
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
