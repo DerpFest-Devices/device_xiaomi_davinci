@@ -9,12 +9,11 @@ $(call inherit-product, device/xiaomi/davinci/device.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 
 # Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-DERP_BUILDTYPE := Official
-EXTRA_UDFPS_ICONS := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+DERPFEST_BUILD_TYPE := Official
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_davinci
+PRODUCT_NAME := lineage_davinci
 PRODUCT_DEVICE := davinci
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi

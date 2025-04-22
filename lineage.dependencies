@@ -20,7 +20,7 @@
     "target_path" : "vendor/xiaomi/sm6150-common"
 },
 {
-    "repository": "DerpFest-Devices/hardware_xiaomi",
+    "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi"
 }
 ]
