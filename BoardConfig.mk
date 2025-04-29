@@ -29,9 +29,6 @@ AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 TARGET_USES_FOD_ZPOS := true
 SOONG_CONFIG_xiaomiVars_uses_fod_extension := $(TARGET_USES_FOD_ZPOS)
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_davinci
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE += androidboot.hardware.revision=V1

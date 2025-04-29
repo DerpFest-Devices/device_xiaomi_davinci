@@ -81,6 +81,9 @@ PRODUCT_PACKAGES += \
     WifiOverlayF10G \
     WifiOverlayF10I
 
+# Vendor init
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_davinci)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/davinci/davinci-vendor.mk)
 
