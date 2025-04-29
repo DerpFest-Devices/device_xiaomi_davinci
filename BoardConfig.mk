@@ -26,7 +26,6 @@ TARGET_OTA_ASSERT_DEVICE := davinci,davinciin
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
 # Fingerprint
-TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/xiaomi:libudfps_extension.xiaomi
 TARGET_USES_FOD_ZPOS := true
 SOONG_CONFIG_xiaomiVars_uses_fod_extension := $(TARGET_USES_FOD_ZPOS)
 
