@@ -12,6 +12,5 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">Adrian (@adi20_01)</string>
-
+    <string name="derpfest_maintainer">Adrian (@adi20_01)</string>
 </resources>
