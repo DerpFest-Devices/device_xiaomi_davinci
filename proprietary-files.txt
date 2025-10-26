@@ -1,36 +1,51 @@
 # These proprietary files are extracted from Xiaomi Mi 9T (codenamed `davinci`) MIUI V12.5.2.0.RFJCNXM, unless pinned
+# msmsteppe: LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
 
-# ADSP modules
+# ADSP modules - from msmsteppe
+vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
+vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
+vendor/lib/rfsa/adsp/libcamera_nn_skel.so|29d949909c9f115491b781ff93604be238e0f965
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so|58cbb97212073cf7e4780c6d77a7628c3ee845bd
+vendor/lib/rfsa/adsp/libdspCV_skel.so|c6034c389845a94a4054dd0fe9a0381adbf086e5
+vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so|c4ae81542111429bde7e08be7e80c8866d466875
+vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libdsp_streamer_skel.so|ece66eb42105bb88f196e5678919393249ea2aac
+vendor/lib/rfsa/adsp/libfastcvadsp.so|5c86de2533d60534ce5b07e6be13bcf988e4b03b
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|f3f79fd19ade4ec0947fd901d216e9c39ef5e276
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|baf2152894bf05c0c14581e3def9b4d1abf9e6d1
+vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so|4600b2b3d435dd1f6baf8ef9d0c99b0caa413f13
+vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|44ee517f73908376a226f02a1ecd7ab22e5ae6ca
+vendor/lib/rfsa/adsp/libscveT2T_skel.so|e7b555579924337dc72badc71bdd49c13664454b
+vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
+
+# ADSP modules (aptx)
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so
-vendor/lib/rfsa/adsp/dirac_resource.dar
+
+# ADSP modules (camera)
 vendor/lib/rfsa/adsp/libSuperSensor_skel.so
-vendor/lib/rfsa/adsp/libVC1Dec.so
-vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so
-vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
-vendor/lib/rfsa/adsp/libcamera_nn_skel.so
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so
+
+# ADSP modules (dirac)
+vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
-vendor/lib/rfsa/adsp/libdspCV_skel.so
-vendor/lib/rfsa/adsp/libdsp_streamer_add_constant.so
-vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libdsp_streamer_skel.so
-vendor/lib/rfsa/adsp/libfastcvadsp.so
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so
-vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
-vendor/lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
+
+# ADSP modules (misound)
 vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
 vendor/lib/rfsa/adsp/misound_res.bin
 
-# Audio ACDB
+# Audio ACDB - from msmsteppe
+vendor/lib/libacdb-fts.so|fb0d3046e2f81838bb1ed77c9c659d2a7eccabe8
+vendor/lib/libacdbloader.so|821ae8894fd27b0010baed250d54bb3b8d8b0228
+vendor/lib/libacdbrtac.so|7ccee4ffd7cddf506b70c14afb043268ecdecf42
+vendor/lib/libadiertac.so|c62f6a29ecd5c13564196beb058a128782f68532
+
+# Audio ACDB (data)
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
@@ -41,17 +56,13 @@ vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libaudcal.so
 
 # Audio firmware
 vendor/firmware/tfa98xx.cnt
 
 # Audio libraries
 vendor/lib/btaudio_offload_if.so
+vendor/lib/libaudcal.so
 vendor/lib/libadm.so
 vendor/lib/libqtigef.so
 
